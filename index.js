@@ -1,5 +1,4 @@
-async function Grabdata() {
-    var APIKEY = 'https://osutrack-api.ameo.dev/peak?user=21943340&mode=0';
+     var APIKEY = 'https://osutrack-api.ameo.dev/peak?user=21943340&mode=0';
 
     try {
         const Getapi = await fetch(APIKEY, { method: "GET" });
@@ -20,5 +19,5 @@ async function Grabdata() {
         document.getElementById("api").innerHTML = "No data response from osutrack-api, try again later. :(";
         console.error(exception);
     }
-}
+
 
